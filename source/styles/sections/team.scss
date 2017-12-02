@@ -1,0 +1,41 @@
+.team {
+  background: $c-background url("../images/team-bg.jpg") no-repeat center/cover;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0 10px 15px;
+  }
+
+  &__photo {
+    height: 240px;
+    width: 190px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 35px;
+
+    &--text-label {
+      color: #f3f3f3;
+      font-size: 0.875rem;
+      padding-bottom: 10px;
+    }
+  }
+
+  .title__header {
+      color: #fff;
+  }
+}
+

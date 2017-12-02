@@ -1,0 +1,14 @@
+section.expertise
+    .container
+        .title.title--center
+            h2.title__header Expertise
+            h3.title__description Lorem ipsum dolor sit amet proin gravida nibh vel velit
+            .title__bottom--line
+
+        - var items = [{title : "Web design & development", description : "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean", path: "design.png"}, {title : "Branding identity", description : "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean", path: "identity.png"}, {title : "Mobile app", description : "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean", path: "app.png"}, {title : "Search engine optimization ", description : "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean", path: "optimization.png"}, {title : "Game development", description : "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean", path: "develop.png"}, {title : "Made with love", description : "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean", path: "love.png"}]
+        ul.expertise__list
+            each item in items
+                li.expertise__item
+                    .expertise__image: img(src="images/expertise-icons/"+item.path)
+                    h3.expertise__title= item.title
+                    p.expertise__description= item.description

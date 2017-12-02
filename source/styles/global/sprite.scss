@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$barneys-name: 'barneys';
+$barneys-x: 0px;
+$barneys-y: 126px;
+$barneys-offset-x: 0px;
+$barneys-offset-y: -126px;
+$barneys-width: 154px;
+$barneys-height: 41px;
+$barneys-total-width: 338px;
+$barneys-total-height: 235px;
+$barneys-image: '../images/sprite.png';
+$barneys: (0px, 126px, 0px, -126px, 154px, 41px, 338px, 235px, '../images/sprite.png', 'barneys', );
+$billabong-name: 'billabong';
+$billabong-x: 0px;
+$billabong-y: 0px;
+$billabong-offset-x: 0px;
+$billabong-offset-y: 0px;
+$billabong-width: 130px;
+$billabong-height: 70px;
+$billabong-total-width: 338px;
+$billabong-total-height: 235px;
+$billabong-image: '../images/sprite.png';
+$billabong: (0px, 0px, 0px, 0px, 130px, 70px, 338px, 235px, '../images/sprite.png', 'billabong', );
+$converse-name: 'converse';
+$converse-x: 130px;
+$converse-y: 0px;
+$converse-offset-x: -130px;
+$converse-offset-y: 0px;
+$converse-width: 113px;
+$converse-height: 69px;
+$converse-total-width: 338px;
+$converse-total-height: 235px;
+$converse-image: '../images/sprite.png';
+$converse: (130px, 0px, -130px, 0px, 113px, 69px, 338px, 235px, '../images/sprite.png', 'converse', );
+$gucci-name: 'gucci';
+$gucci-x: 138px;
+$gucci-y: 213px;
+$gucci-offset-x: -138px;
+$gucci-offset-y: -213px;
+$gucci-width: 140px;
+$gucci-height: 21px;
+$gucci-total-width: 338px;
+$gucci-total-height: 235px;
+$gucci-image: '../images/sprite.png';
+$gucci: (138px, 213px, -138px, -213px, 140px, 21px, 338px, 235px, '../images/sprite.png', 'gucci', );
+$klein-name: 'klein';
+$klein-x: 0px;
+$klein-y: 167px;
+$klein-offset-x: 0px;
+$klein-offset-y: -167px;
+$klein-width: 151px;
+$klein-height: 24px;
+$klein-total-width: 338px;
+$klein-total-height: 235px;
+$klein-image: '../images/sprite.png';
+$klein: (0px, 167px, 0px, -167px, 151px, 24px, 338px, 235px, '../images/sprite.png', 'klein', );
+$levis-name: 'levis';
+$levis-x: 114px;
+$levis-y: 70px;
+$levis-offset-x: -114px;
+$levis-offset-y: -70px;
+$levis-width: 109px;
+$levis-height: 53px;
+$levis-total-width: 338px;
+$levis-total-height: 235px;
+$levis-image: '../images/sprite.png';
+$levis: (114px, 70px, -114px, -70px, 109px, 53px, 338px, 235px, '../images/sprite.png', 'levis', );
+$mango-name: 'mango';
+$mango-x: 0px;
+$mango-y: 213px;
+$mango-offset-x: 0px;
+$mango-offset-y: -213px;
+$mango-width: 138px;
+$mango-height: 22px;
+$mango-total-width: 338px;
+$mango-total-height: 235px;
+$mango-image: '../images/sprite.png';
+$mango: (0px, 213px, 0px, -213px, 138px, 22px, 338px, 235px, '../images/sprite.png', 'mango', );
+$nike-name: 'nike';
+$nike-x: 243px;
+$nike-y: 0px;
+$nike-offset-x: -243px;
+$nike-offset-y: 0px;
+$nike-width: 95px;
+$nike-height: 34px;
+$nike-total-width: 338px;
+$nike-total-height: 235px;
+$nike-image: '../images/sprite.png';
+$nike: (243px, 0px, -243px, 0px, 95px, 34px, 338px, 235px, '../images/sprite.png', 'nike', );
+$puma-name: 'puma';
+$puma-x: 0px;
+$puma-y: 70px;
+$puma-offset-x: 0px;
+$puma-offset-y: -70px;
+$puma-width: 114px;
+$puma-height: 56px;
+$puma-total-width: 338px;
+$puma-total-height: 235px;
+$puma-image: '../images/sprite.png';
+$puma: (0px, 70px, 0px, -70px, 114px, 56px, 338px, 235px, '../images/sprite.png', 'puma', );
+$zara-name: 'zara';
+$zara-x: 0px;
+$zara-y: 191px;
+$zara-offset-x: 0px;
+$zara-offset-y: -191px;
+$zara-width: 162px;
+$zara-height: 22px;
+$zara-total-width: 338px;
+$zara-total-height: 235px;
+$zara-image: '../images/sprite.png';
+$zara: (0px, 191px, 0px, -191px, 162px, 22px, 338px, 235px, '../images/sprite.png', 'zara', );
+$spritesheet-width: 338px;
+$spritesheet-height: 235px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($barneys, $billabong, $converse, $gucci, $klein, $levis, $mango, $nike, $puma, $zara, );
+$spritesheet: (338px, 235px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

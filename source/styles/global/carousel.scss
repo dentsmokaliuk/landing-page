@@ -1,0 +1,75 @@
+.owl-dots {
+  text-align: center;
+
+  .owl-dot {
+    display: inline-block;
+    zoom: 1;
+
+    span {
+      display: block;
+      cursor: pointer;
+      transition: opacity 200ms ease;
+    }
+  }
+}
+
+.hero .owl-dots {
+  margin-top: 120px;
+
+  .owl-dot {
+    span {
+      margin: 0 15px;
+      width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      border: 1px solid #fff;
+
+      &:hover {
+        border: none;
+        background-color: #00E0D0;
+      }
+    }
+
+    &.active {
+      span {
+        border: none;
+        background-color: #00E0D0;
+      }
+    }
+  }
+}
+
+.testimonials {
+  .owl-dot {
+    position: relative;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 20px;
+      width: 45px;
+      height: 45px;
+      background-image: url("../images/people-2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &.active {
+      top: -30px;
+    }
+  }
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+
+  .owl-prev, .owl-next {
+    font-size: 4rem;
+    padding: 0 50px;
+
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+}

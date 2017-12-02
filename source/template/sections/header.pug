@@ -1,0 +1,9 @@
+header.header
+    .header__img: img.header__logo(src="images/logo.png")
+    button.header__toggle
+        span
+    nav.nav
+        - var items =["Home", "About", "Expertise", "Teams", "Works", "People say", "Contact"]
+        - var dataItems = ['hero', 'story', 'expertise', 'team', 'works', 'testimonials', 'main-section']
+        each item, key in items
+            a.nav__link(href="#" data-link=dataItems[key])= item

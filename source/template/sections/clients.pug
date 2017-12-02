@@ -1,0 +1,7 @@
+section.clients
+    h2.title.title__header Our happy clients
+    - var items = ["zara.png", "mango.png", "barneys.png", "gucci.png", "klein.png", "nike.png", "converse.png", "puma.png", "levis.png", "billabong.png"]
+    ul.clients__list
+        each item in items
+            li.clients__item
+                img.clients__logo(src="images/icons/"+item)

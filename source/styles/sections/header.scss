@@ -1,0 +1,66 @@
+.header {
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+
+  &__toggle {
+    display: none;
+    background-color: transparent;
+    vertical-align: middle;
+    text-align: center;
+
+    span {
+      position: relative;
+      margin-top: 33px;
+      margin-bottom: 33px;
+
+      &,
+      &:before,
+      &:after {
+        display: block;
+        width: 50px;
+        height: 3px;
+        transition: transform 0.3s linear;
+        background-color: #fff;
+      }
+
+      &:before, &:after {
+        position: absolute;
+        content: "";
+      }
+      &:before {
+        top: -8px;
+      }
+      &:after {
+        top: 8px;
+      }
+    }
+  }
+
+  &__toggle--active {
+    background-color: $c-background-nav;
+
+    span {
+      background-color: transparent;
+      &:before { transform: translateY(8px) rotate(45deg); }
+      &:after { transform: translateY(-8px) rotate(-45deg); }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__toggle {
+      display: block;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px 0 0;
+  }
+}
+
+
+
+
+

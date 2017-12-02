@@ -1,0 +1,29 @@
+.testimonials {
+  min-height: 540px;
+  background: $c-background url("../images/testimonials-bg.jpg") no-repeat center/cover;
+  position: relative;
+  color: #fff;
+  text-align: center;
+
+  &__header {
+    font-size: 2rem;
+  }
+
+  &__text {
+    font-family: $ff-description;
+    line-height: 1.875rem;
+    padding: 30px 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    max-width: 40%;
+    min-width: 200px;
+
+  }
+}

@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 13px;
+  text-decoration: none;
+  background: none;
+  text-align: center;
+  transition: 0.25s;
+
+  &--green {
+    text-transform: uppercase;
+    width: 140px;
+    border-radius: 2px;
+    color: $c-buttons;
+    border: 1px solid $c-buttons;
+    font-family: $ff-button;
+
+    &:hover {
+      color: #fff;
+      background-color: $c-buttons;
+      transition: 0.5s;
+    }
+  }
+
+  &--footer {
+    width: 70px;
+    background-color: rgba(204, 204, 204, 0.5);
+    border: none;
+    height: 43px;
+
+
+    &:hover {
+      background-color: rgba(204, 204, 204, 0.7);
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+.person {
+  border: 1px solid #c3c1c8;
+  border-top: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px 0 16px;
+
+  &__name {
+    font-family: $ff-main-black;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  &__position {
+    color: #c3c1c8;
+    font-size: 0.7rem;
+  }
+
+  &--noborder {
+    border: none;
+  }
+}

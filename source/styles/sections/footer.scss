@@ -1,0 +1,142 @@
+.footer {
+  background: $c-background url("../images/footer-bg.jpg") no-repeat center/cover;
+  color: #fff;
+  font-size: 0.875rem;
+
+   &__top {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+   }
+
+  &__bottom {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    max-width: 31%;
+    padding-bottom: 25px;
+
+    @media (max-width: 940px) {
+      max-width: 50%;
+
+      &--left {
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 690px) {
+      &--center {
+        max-width: none;
+      }
+
+      &--right {
+        max-width: none;
+        width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $ff-main-black;
+    line-height: 1.7rem;
+    height: 59px;
+    font-size: 1.15rem;
+    position: relative;
+
+    h4 {
+      margin: 0;
+      @include centerer-y();
+    }
+  }
+
+  &__description {
+    line-height: 1.6rem;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+
+    &--icon {
+      font-size: 1.5rem;
+      width: 5%;
+      padding-right: 10%;
+    }
+  }
+
+  &__contact {
+    display: flex;
+
+    &--icon {
+      padding-right: 15px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (max-width: 690px) {
+      flex-direction: row;
+    }
+
+    @media (max-width: 630px) {
+      flex-direction: column;
+    }
+  }
+
+  &__field {
+    margin-bottom: 16px;
+    width: 274px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 274px;
+  }
+
+  &__social {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__icon {
+    @include centerer-xy();
+    font-size: 1.25rem;
+    transition: 0.3s;
+
+    &:hover {
+      color: $c-buttons;
+    }
+  }
+
+  &__nav {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 600px) {
+    &__copy {
+      padding-top: 20px;
+    }
+  }
+}

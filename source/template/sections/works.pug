@@ -1,0 +1,18 @@
+section.works
+    .container
+        .works__header
+            h2.title__header Our works
+            a.works__link(href="#")
+                .works__link--description See All Project in dribble
+                    span.works__link--icon.i.fa.fa-angle-right(aria-hidden="true")
+
+    -var items = ["work-1.jpg", "work-2.jpg", "work-3.jpg", "work-4.jpg", "work-5.jpg", "work-6.jpg", "work-6.jpg", "work-5.jpg", "work-4.jpg", "work-3.jpg", "work-2.jpg", "work-1.jpg"]
+    ul.works__list
+        each item in items
+            li.works__item
+                img.works__img(src="images/"+item)
+                .works__overlay
+                    a.works__overlay-link(href="#")
+                        i.fa.fa-picture-o(aria-hidden="true")
+    .container
+        .works__btn: a.button.button--green(href="#") Load more

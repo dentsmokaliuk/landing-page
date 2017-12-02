@@ -1,0 +1,26 @@
+.video {
+  min-height: 540px;
+  background: $c-background url("../images/video-bg.jpg") no-repeat center/cover;
+  position: relative;
+
+  &__watch {
+    text-align: center;
+    color: #fff;
+    @include centerer-xy();
+  }
+
+  &__sign {
+    display: inline-block;
+    font-size: 6.75rem;
+    position: relative;
+  }
+
+  &__play {
+    cursor: pointer;
+  }
+
+  &__label {
+    font-family: $ff-main-black;
+    text-transform: uppercase;
+  }
+}

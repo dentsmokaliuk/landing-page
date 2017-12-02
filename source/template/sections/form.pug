@@ -1,0 +1,10 @@
+.container.main-section
+    section.form
+        h2.title.title__header Give us a good news
+        form.form__form-section(method="POST" action="#")
+            input.form__input(type="text" placeholder="Name" data-valid="required")
+            input.form__input(type="text" placeholder="Email" data-valid="required" data-email)
+            input.form__input(type="text" placeholder="Subject" data-valid="required")
+            textarea.form__input.form__text-area(rows="10" name="message" placeholder="Your Message" data-valid="required")
+            button.button.button--green(type="submit") Submit
+    include ../sections/clients

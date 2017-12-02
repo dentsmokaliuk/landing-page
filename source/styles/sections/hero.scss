@@ -1,0 +1,45 @@
+.hero {
+  min-height: 670px;
+  background: $c-background url("../images/hero-bg.jpg") center/cover no-repeat;
+
+  &__main-text {
+    text-align: center;
+    padding-top: 150px;
+
+    span {
+
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-family: $ff-hero-title;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  &__desription {
+    margin: 0 auto 44px;
+    max-width: 760px;
+    color: $c-main-text;
+    font-family: $ff-main;
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+}
+.line {
+  margin: 7px 0 22px;
+
+  &__separate {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: $c-buttons;
+  }
+}
+

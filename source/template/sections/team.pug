@@ -1,0 +1,18 @@
+section.team
+    .container
+        .title.title--center.title--violet-background
+            h2.title__header Meet our amazing team
+            h3.title__description Lorem ipsum dolor sit amet proin gravida nibh vel velit
+            .title__bottom--line
+
+        -var items = [{name: "Semf Usuk", position : "Ceo & founder", path : "team-1.jpg"}, {name : "Dik Adalin", position : "Enginiring", path : "team-2.jpg"}, {name : "Jeng Kol", position : "Designer", path : "team-3.jpg"}, {name : "Pet Romak", position : "Marketing", path : "team-4.jpg"}]
+        ul.team__list
+            each item in items
+                li.team__item
+                    .team__photo: img.team__img(src="images/"+item.path)
+                    .person
+                        .person__name= item.name
+                        .person__position= item.position
+        .team__bottom
+            p.team__bottom--text-label Become part of our dream team, let`s join us!
+            a.button.button--green(href="#") We are hiring

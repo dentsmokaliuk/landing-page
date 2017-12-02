@@ -1,0 +1,35 @@
+.story {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__picture {
+    width: 30%;
+
+    @media (max-width: 670px) {
+      display: none;
+    }
+  }
+
+  &__text{
+    width: 57%;
+
+    @media (max-width: 670px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    color: $c-text;
+    line-height: 1.75;
+    font-size: 0.875rem;
+  }
+
+  &--button {
+    margin-top: 8px;
+  }
+}
